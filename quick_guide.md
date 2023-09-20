@@ -10,13 +10,14 @@ We are going to show you how to install openHAB, add lightbulbs and switch light
 - a press of a button on your mobile phone and
 - in an automated way by openHAB at the time when you go to bed.
 
-You will see how easy it is and you do not have to be a home automation or IT expert.
+You will see how easy it is and you do not have to be a home automation or IT expert (and we assume that you know how to unzip files and what IP addresses are).
 
 [[toc]]
 
 ## Step 1: Install and Start openHAB
 
 Estimated time: 3 minutes
+
 We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, as openHAB just requires very little resources. If you want to install openHAB on a different platform, please refer for Step 1 to our [Installation Documentation](installation.html)
 
 a. Install OpenJDK runtime v17:
@@ -40,10 +41,11 @@ c. Start openHAB
   - On the very first start you are asked to create a new user
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d57f141f-e7c7-4161-9a63-78cc16d65ee3)
   - Note:
-    - If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service
+    - If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)
 
-##Step 2: Adding Lightbulbs to openHAB
+## Step 2: Adding Lightbulbs to openHAB
 
+a. Binding
 ➡️ [Prerequisites]({{base}}/installation/index.html#prerequisites).
 
   
