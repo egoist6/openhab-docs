@@ -45,7 +45,11 @@ c. Start openHAB
 
 ## Step 2: Adding Lightbulbs to openHAB
 
-a. Binding
-➡️ [Prerequisites]({{base}}/installation/index.html#prerequisites).
+a. Setup wizard, Set your location, install basicui, rrd4j, scripting, skip wizard
+![image](https://github.com/egoist6/openhab-docs/assets/76903043/b23fad5d-828a-44a0-8f1e-a39c63172eb7)
+
+
+➡️ http://localhost:8080/setup-wizard/
+[Prerequisites]({{base}}/installation/index.html#prerequisites).
 
   
