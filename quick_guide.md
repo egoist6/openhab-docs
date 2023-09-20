@@ -27,22 +27,23 @@ a. Install OpenJDK runtime v17:
 
 b. Install openHAB:
   - [Download-Link](https://www.openhab.org/download/) (click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime")
-  - Unzip to a folder of your choice e.g. `C:\Program Files\openHAB`  (requires admin rights, or choose a different folder, e.g. `C:\openHAB`)
+  - Unzip to a folder of your choice e.g. `C:\Program Files\openHAB`
   - ![openHAB Folders](images/openHAB_Folders.png)
+  - Note:
+    -  Installing into `C:\Program Files\openHAB` requires admin rights. Alternatively choose a different folder, e.g. `C:\openHAB`
 
 c. Start openHAB
   - Double click on `C:\openHAB\start.bat`
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/375930c3-28f5-4f24-ab53-8ade3e8db6d6)
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)
   - (In case Windows Defender pops up, click "Allow Access" for java.exe to communicate)
+  - Open your browser and type in the following URL: `localhost:8080` (or `<IP-address of your PC>:8080` if you connect from your mobile phone)
+  - On the very first start you are asked to create a new user
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d57f141f-e7c7-4161-9a63-78cc16d65ee3)
+  - Note:
+    - If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service
 
-DONE!
+##Step 2: Adding Lightbulbs to openHAB
 
-##Step 2:
-
-a. Open your browser and type in the following URL: `localhost:8080`
-
-![image](https://github.com/egoist6/openhab-docs/assets/76903043/bb4139a6-57e1-4c92-b405-c3cbab623831)
-
-➡️
+➡️ [Prerequisites]({{base}}/installation/index.html#prerequisites).
 
   
