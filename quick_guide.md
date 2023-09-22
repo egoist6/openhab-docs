@@ -73,7 +73,11 @@ Estimated time: 1 minute
 ## Step 3: Adding Lightbulbs to openHAB
 
 a. Adding a Dimmable Lightbulb Thing
-  - A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices a [**Thing**](/concepts/things.html). Let's create a Thing:
+  - A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices in openHAB a [**Thing**](/concepts/things.html), a digital representative of your real world lightbulb. Let's create a Thing:
+  - Before you start adding a new Thing, please [**always read the documentation of the Add-on**](https://www.openhab.org/addons/)
+    - Notes:
+      o Some add-ons (adapters) might install a Bridge Thing first. In this case read the [Add-on's doc](https://www.openhab.org/addons/) how to procede.
+      o If your Things are password protected, please provide your credentials in the Add-on by clicking `Settings` -> `Bindings` -> `<Add-on Name>` -> `Gear Icon` 
   - Click on `Settings` -> `Things`
   - Depending an your Add-on your system has already detected all your Things automatically (in our example Shelly Things) which you can see on your `Inbox` button.
   - If your system did not detect all your devices press the `+` button: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/79cef2a7-8c0f-47bd-845b-d905e9ecc579)
@@ -85,13 +89,22 @@ a. Adding a Dimmable Lightbulb Thing
   - Hit `ok`
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/728ffdd3-e12d-4bda-a1e6-ecbd840d0a34)
   - Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
-- Click on `Things`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/96804a12-7509-49d3-9958-a4ed04e0af6c)
+- Click on `Things`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/153d69cf-d1c4-4b5b-8fab-e87629f74fdc)
+
+- and your screen should look like this: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1f713c53-83b5-481b-9661-3b30f66eb811)
+
+  - Click on the Thing we just created.As we said above, this Thing is the digital representative of your smart dimmer (dimmable lightbulb).
+  - The Thing config page has three tabs. Click on the tab `Channels`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/155f560d-1b00-426b-b961-237fadf3344a)
+  - As you can see, your Thing offers a lot of functionalities or capabilities (like set brightness, button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more), which want to start sending their information. These communication channels are simply called [**Channels**](/concepts/things.html#channels) and you need to activate them as you might do not need all of them.
+  cont. and create brightness thing
 
 
 
 
+## What next?
+Model
 
-➡️ http://localhost:8080/setup-wizard/
+➡️ 
 [Prerequisites]({{base}}/installation/index.html#prerequisites).
 
   
