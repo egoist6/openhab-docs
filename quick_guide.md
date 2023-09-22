@@ -34,19 +34,44 @@ b. Install openHAB:
     -  Installing into `C:\Program Files\openHAB` requires admin rights. Alternatively choose a different folder, e.g. `C:\openHAB`
 
 c. Start openHAB
-  - Double click on `C:\openHAB\start.bat`
+  - Double click on `C:\openHAB\start.bat` and minimize the window when you see the following screen.
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)
   - (In case Windows Defender pops up, click "Allow Access" for java.exe to communicate)
-  - Open your browser and type in the following URL: `localhost:8080` (or `<IP-address of your PC>:8080` if you connect from your mobile phone)
+  - Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address of your PC>:8080` if you connect from your mobile phone)
   - On the very first start you are asked to create a new user
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d57f141f-e7c7-4161-9a63-78cc16d65ee3)
   - Note:
     - If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)
 
-## Step 2: Adding Lightbulbs to openHAB
+## Step 2: Setup Wizard
 
-a. Setup wizard, Set your location, install basicui, rrd4j, scripting, skip wizard
-![image](https://github.com/egoist6/openhab-docs/assets/76903043/b23fad5d-828a-44a0-8f1e-a39c63172eb7)
+- After you have created your user and you are logged on, a **Setup Wizard** is automatically started:
+- ![image](https://github.com/egoist6/openhab-docs/assets/76903043/9bf16d68-7d49-4a53-b633-7091bad70da7)
+  - You can cancel at any time this wizzard and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/)
+- Set your location:
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/5b5dff26-4344-4faf-9619-3d4ab0e49139)
+  - This data will not be sent to outside your network (you can also skip this step by clicking on `Configure in Settings Later`)
+  - This data is required for services such as determining your bank holidays for your location
+- Install Add-Ons:
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/cbd7da10-b7a8-465a-90af-6d0468b9672a)
+  - there are already three pre-defined add-ons selected to be installed. During this Guide they are not required but we recommend to install them for a later purpose
+  - Click on `Select Add-ons to Install` and pick an adapter for your smart lighting system/switch such as:
+    - Philips hue
+    - Shelly
+    - Lutron
+    - yeelight
+    - LIFX
+    - KNX, ZigBee, Z-Wave, DALI, MQTT smart switch
+    - and many more
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/82078937-451a-43dc-85df-e4566e2e47f9)
+  - now click `Install 4 add-ons`
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/11389822-2e8f-4fbf-b75e-9ae9229a058b)
+  - now click on `Get Started` and we are ready for the next step
+
+## Step 3: Adding Lightbulbs to openHAB
+
+a. 
+
 
 
 ➡️ http://localhost:8080/setup-wizard/
