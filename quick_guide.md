@@ -6,7 +6,7 @@ title: Quick Guide for new users
 # Quick Guide
 
 This Quick Guide is aimed at new users.
-We are going to show you how to install openHAB, add lightbulbs and switch lights on by
+We are going to show you how to install openHAB, add a dimmable lightbulb and switch the light on by
 - a press of a button on your mobile phone and
 - in an automated way by openHAB at the time when you go to bed.
 
@@ -45,6 +45,8 @@ c. Start openHAB
 
 ## Step 2: Setup Wizard
 
+Estimated time: 1 minute
+
 - After you have created your user and you are logged on, a **Setup Wizard** is automatically started:
 - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/9bf16d68-7d49-4a53-b633-7091bad70da7)
   - You can cancel at any time this wizzard and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/)
@@ -64,13 +66,28 @@ c. Start openHAB
     - KNX, ZigBee, Z-Wave, DALI, MQTT smart switch
     - and many more
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/82078937-451a-43dc-85df-e4566e2e47f9)
-  - now click `Install 4 add-ons`
+  - click `Install 4 add-ons`
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/11389822-2e8f-4fbf-b75e-9ae9229a058b)
-  - now click on `Get Started` and we are ready for the next step
+- After installation of Add-ons click on `Get Started` to close the Setup Wizard
 
 ## Step 3: Adding Lightbulbs to openHAB
 
-a. 
+a. Adding a Dimmable Lightbulb Thing
+  - A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices a [**Thing**](/concepts/things.html). Let's create a Thing:
+  - Click on `Settings` -> `Things`
+  - Depending an your Add-on your system has already detected all your Things automatically (in our example Shelly Things) which you can see on your `Inbox` button.
+  - If your system did not detect all your devices press the `+` button: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/79cef2a7-8c0f-47bd-845b-d905e9ecc579)
+  - click on your Shelly Add-on: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/a61bd43b-6493-4c6e-b37c-ae9774acc20c)
+  - and press scan: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/7bf634ca-7d5d-484d-9c5a-065c5c0a611f)
+  - Click on the Thing you want to add and select in the next popup dialog `Add as Thing`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d804ff92-c4b3-4556-914d-23c6ba0034af)
+  - We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-DiningTable-Dimmer`
+    - Tip: It makes sense to define a syntax for your Thing names, such as: `AddonName-Room-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.
+  - Hit `ok`
+  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/728ffdd3-e12d-4bda-a1e6-ecbd840d0a34)
+  - Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
+- Click on `Things`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/96804a12-7509-49d3-9958-a4ed04e0af6c)
+
+
 
 
 
