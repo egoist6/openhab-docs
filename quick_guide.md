@@ -20,24 +20,20 @@ Estimated time: 3 minutes
 
 We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, as openHAB just requires very little resources. If you want to install openHAB on a different platform, please refer for Step 1 of this Quick Guide to our [Installation Documentation](installation.html)
 
-a. Install OpenJDK runtime v17:
-  - [Download Link](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)
-  - Double click the `.msi` file to start installation (requires admin rights)
-  - At the beginning of the installation, change "Set JAVA_HOME variable" to "Will be installed on local drive"
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)
-
-|Install OpenJDK runtime v17   |      |
+|### Install OpenJDK runtime v17   | |
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|[Download OpenJDK](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)  |
+|[Download OpenJDK](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)| |
 |Double click the `.msi` file to start installation (requires admin rights) | |
-|change "Set JAVA_HOME variable" to "Will be installed on local drive"|![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
+|Change "Set JAVA_HOME variable" to "Will be installed on local drive"|![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
 
-b. Install openHAB:
-  - [Download-Link](https://www.openhab.org/download/) (click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime")
-  - Unzip to a folder of your choice e.g. `C:\Program Files\openHAB`
-  - ![openHAB Folders](images/openHAB_Folders.png)
-  - Note:
-    -  Installing into `C:\Program Files\openHAB` requires admin rights. Alternatively choose a different folder, e.g. `C:\openHAB`
+|### Install openHAB | |
+|----------------------------------------------------------------|---------------------------------------------------------------|
+|[Download openHAB](https://www.openhab.org/download/) ||
+|Click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime"|![download_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/9e59b846-4aa6-450d-bad4-dd7ec60add08) |
+|Unzip to a folder of your choice e.g. `C:\Program Files\openHAB`|![openHAB Folders](images/openHAB_Folders.png)|
+|Note:
+  -  Installing into `C:\Program Files\openHAB` requires admin rights. Alternatively choose a different folder, e.g. `C:\openHAB`||
+
 
 c. Start openHAB
   - Double click on `C:\openHAB\start.bat` and minimize the window when you see the following screen.
