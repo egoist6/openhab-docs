@@ -18,33 +18,28 @@ You will see how easy it is and you do not have to be a home automation or IT ex
 
 Estimated time: 3 minutes
 
-We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, as openHAB just requires very little resources. If you want to install openHAB on a different platform, please refer for Step 1 of this Quick Guide to our [Installation Documentation](installation.html)
+We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, as openHAB just requires very little resources. If you want to install openHAB on a different platform, please refer for Step 1 of this Quick Guide to our [Installation Documentation](installation.html).
 
 ### a. Install OpenJDK runtime v17
-
+|Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |[Download OpenJDK](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)| |
 |Double click the `.msi` file to start installation (requires admin rights) | |
 |Change "Set JAVA_HOME variable" to "Will be installed on local drive"|![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
 
-**b.  Install openHAB**
-
+### b.  Install openHAB
+|Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |[Download openHAB](https://www.openhab.org/download/) ||
 |Click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime"|![download_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/9e59b846-4aa6-450d-bad4-dd7ec60add08) |
-|Unzip to a folder of your choice e.g. `C:\Program Files\openHAB`|![openHAB Folders](images/openHAB_Folders.png)|
-|Note: Installing into `C:\Program Files\openHAB` requires admin rights. Alternatively choose a different folder, e.g. `C:\openHAB`||
+|There is no installation program. Simply unzip the downloaded .zip file to your preferred folder like `C:\Program Files\openHAB` (requires admin rights) or `C:\openHAB`|![unzip_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/0bf58a31-2132-4fe8-8a4b-0609d156372b)|
 
-
-c. Start openHAB
-  - Double click on `C:\openHAB\start.bat` and minimize the window when you see the following screen.
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)
-  - (In case Windows Defender pops up, click "Allow Access" for java.exe to communicate)
-  - Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address of your PC>:8080` if you connect from your mobile phone)
-  - On the very first start you are asked to create a new user
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d57f141f-e7c7-4161-9a63-78cc16d65ee3)
-  - Note:
-    - If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)
+### c.  Start openHAB
+|Steps|Notes|
+|----------------------------------------------------------------|---------------------------------------------------------------|
+|Double click on `C:\..\openHAB\start.bat` and minimize the window when you see the following screen. (In case Windows Defender pops up, click "Allow Access")|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)|
+|Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address of your PC>:8080` if you connect from your mobile phone). On the very first start you are asked to create a new user| |
+|Note: If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)||
 
 ## Step 2: Setup Wizard
 
