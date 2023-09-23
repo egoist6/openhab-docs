@@ -6,11 +6,11 @@ title: Quick Guide for new users
 # Quick Guide
 
 This Quick Guide is aimed at new users.
-We are going to show you how to install openHAB, add a dimmable lightbulb and switch the light on by
+It will show you how to install openHAB, how to add a smart device (for a dimmable lightbulb) and how to switch on the light by
 - a press of a button on your mobile phone and
 - in an automated way by openHAB at the time when you go to bed.
 
-You will see how easy it is and you do not have to be a home automation or IT expert (and we assume that you know how to unzip files and what IP addresses are).
+You will see how easy it is and you do not have to be a home automation or IT expert (and we only assume that you know how to unzip files and what IP addresses are).
 
 [[toc]]
 
@@ -18,7 +18,7 @@ You will see how easy it is and you do not have to be a home automation or IT ex
 
 Estimated time: 3 minutes
 
-We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, as openHAB just requires very little resources. If you want to install openHAB on a different platform, please refer for Step 1 of this Quick Guide to our [Installation Documentation](installation.html).
+We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, as openHAB requires very little resources. If you want to install openHAB on a different platform, please refer for Step 1 of this Quick Guide to our [Installation Documentation](installation.html).
 
 ### A. Install OpenJDK runtime v17
 |Steps|Notes|
@@ -47,27 +47,15 @@ Estimated time: 1 minute
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|1. After you have created an admin user, a **Setup Wizard** is started automatically. The wizzard will configure basic settings. | You can cancel this wizzard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).|
+|1. After you have created an admin user, a **Setup Wizard** is started automatically. The wizard will configure basic settings. | You can cancel this wizard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).|
 |2. Set Language, Region, Time Zone and Location | ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede) Note: Your location will not be sent to outside your network and this step can also be skipped by clicking on `Configure in Settings Later`.  |
-|3. Install Add-Ons | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d)|
-|Note: Add-ons are components like opanHAB's **bindings**/adapters (to connect to your home automation Things), script languages, persistency services, etc. which are dynamically installed when required. The setup wizard already adds three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
-|  During the setup wizard - `Select Add-ons to Install` and pick an adapter for your smart lighting system/switch such as:
-    - Philips hue
-    - Shelly
-    - Lutron
-    - yeelight
-    - LIFX
-    - KNX, ZigBee, Z-Wave, DALI, MQTT smart switch
-    - and many more
-  - click `Install 4 add-ons`
-- After installation of Add-ons click on `Get Started` to close the Setup Wizard
-
-config binding
-scan
-
+|3a. Click on `Select Add-ons to Install` and select the vendor ([Philips hue](https://www.openhab.org/addons/bindings/hue/), [Lutron](https://www.openhab.org/addons/bindings/lutron/), [yeelight](https://www.openhab.org/addons/bindings/yeelight/), [LIFX](https://www.openhab.org/addons/bindings/lifx/), ...) or protocol name ([KNX](https://www.openhab.org/addons/bindings/knx/), [ZigBee](https://www.openhab.org/addons/bindings/zigbee/), [Z-Wave](https://www.openhab.org/addons/bindings/zwave/), [DALI](https://www.openhab.org/addons/bindings/dali/), [MQTT](https://www.openhab.org/addons/bindings/mqtt/), ...) of your smart device - in our example "[Shelly](https://www.openhab.org/addons/bindings/shelly/". Add-ons which connect to your smart device (or services) are called **binding** in openHAB. | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d) The setup wizard already added three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
+|3b. Click `Install 4 add-ons`||
+|4. Click `Get Started` to close the Setup Wizard  and you'll be redirected back to openHAB's GUI, called **MainUI**||
 
 ## Step 3: Adding Lightbulbs to openHAB
 
+config binding
 a. Adding a Dimmable Lightbulb Thing
   - A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices in openHAB a [**Thing**](/concepts/things.html), a digital representative of your real world lightbulb. Let's create a Thing:
   - Before you start adding a new Thing, please [**always read the documentation of the Add-on**](https://www.openhab.org/addons/)
@@ -98,7 +86,8 @@ Gui interacts with Items, have a state, receive commands, persist,
 rewrite addons to binding
 
 ## What next?
-Model
+[Model](/tutorial/model.html)
+![image](https://github.com/egoist6/openhab-docs/assets/76903043/9f8c085b-faf7-4f3e-8101-f36da3912cc0)
 
 ➡️ 
 
