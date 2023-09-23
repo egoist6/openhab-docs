@@ -98,13 +98,27 @@ a. Adding a Dimmable Lightbulb Thing
   - As you can see, your Thing offers a lot of functionalities or capabilities (like set brightness, button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more), which want to start sending their information. These communication channels are simply called [**Channels**](/concepts/things.html#channels) and you need to activate them as you might do not need all of them.
   cont. and create brightness thing
 
-
-
+Gui interacts with Items, have a state, receive commands, persist, 
+rewrite addons to binding
 
 ## What next?
 Model
 
 ➡️ 
+
+installation of add-ons; welches fileformat, gif?
+blockly rules, small pictures
+
+
+italic:
+table: |
+yellow block
+  ::: warning
+  :::
+blue block
+  ::: tip
+  :::
+
 [Prerequisites]({{base}}/installation/index.html#prerequisites).
 
   
