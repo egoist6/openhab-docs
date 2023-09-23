@@ -24,7 +24,9 @@ a. Install OpenJDK runtime v17:
   - [Download Link](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)
   - Double click the `.msi` file to start installation (requires admin rights)
   - At the beginning of the installation, change "Set JAVA_HOME variable" to "Will be installed on local drive"
- test     |   ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)
+  - 
+test     |   ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)
+qwerti   | tffv
 
 b. Install openHAB:
   - [Download-Link](https://www.openhab.org/download/) (click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime")
