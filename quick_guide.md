@@ -51,22 +51,33 @@ Estimated time: 1 minute
 |2. Set Language, Region, Time Zone and Location | ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede) Your location will not be sent to outside your network and this step can also be skipped by clicking on `Configure in Settings Later`.  |
 |3a. Click on `Select Add-ons to Install` and select the vendor ([Philips hue](https://www.openhab.org/addons/bindings/hue/), [Lutron](https://www.openhab.org/addons/bindings/lutron/), [yeelight](https://www.openhab.org/addons/bindings/yeelight/), [LIFX](https://www.openhab.org/addons/bindings/lifx/), ...) or protocol name ([KNX](https://www.openhab.org/addons/bindings/knx/), [ZigBee](https://www.openhab.org/addons/bindings/zigbee/), [Z-Wave](https://www.openhab.org/addons/bindings/zwave/), [DALI](https://www.openhab.org/addons/bindings/dali/), [MQTT](https://www.openhab.org/addons/bindings/mqtt/), ...) of your smart device - in our example "[Shelly](https://www.openhab.org/addons/bindings/shelly/)". Add-ons which connect to your smart device (or services) are called **binding** in openHAB. | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d) The setup wizard already added three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
 |3b. Click `Install 4 add-ons`||
-|4. Click `Get Started` to close the Setup Wizard  and you'll be redirected back to openHAB's GUI, called **MainUI**||
+|3c. Click `Get Started` to close the Setup Wizard and you'll be redirected back to openHAB's GUI, called **MainUI**.||
+|4. For the next step we will be activating MainUI's side bar. | ![mainui_sidebar](https://github.com/egoist6/openhab-docs/assets/76903043/96c82687-809e-4924-8bac-3e24d090c0ac)|
 
-## Step 3: Adding Lightbulbs to openHAB
+## Step 3: Adding a smart device to openHAB
 
-config binding
-a. Adding a Dimmable Lightbulb Thing
-  - A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices in openHAB a [**Thing**](/concepts/things.html), a digital representative of your real world lightbulb. Let's create a Thing:
-  - Before you start adding a new Thing, please [**always read the documentation of the Add-on**](https://www.openhab.org/addons/)
-    - Notes:
-      o Some add-ons (adapters) might install a Bridge Thing first. In this case read the [Add-on's doc](https://www.openhab.org/addons/) how to procede.
-      o If your Things are password protected, please provide your credentials in the Add-on by clicking `Settings` -> `Bindings` -> `<Add-on Name>` -> `Gear Icon` 
-  - Click on `Settings` -> `Things`
+A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices in openHAB a [**Thing**](/concepts/things.html), which is a digital representation of your real world smart device.
+
+Before we continue with the next step, please follow our recommendation:
+
+::: tip
+Whenever you add a new binding to openHAB, please [**always read the documentation of the Add-on**](https://www.openhab.org/addons/)!
+It will save you a lot of time.
+:::
+
+Let's add a Thing now:
+
+|Steps|Notes|
+|----------------------------------------------------------------|---------------------------------------------------------------|
+|1. Whenever you added a new binding, check its configuration options. In our case we can provide credentials if the Things are password protected. |![mainui_config_binding](https://github.com/egoist6/openhab-docs/assets/76903043/b066fbda-0a6e-46a1-b700-854dfdbdc5ac)|
+|2. Navigate to Things|![mainui_things](https://github.com/egoist6/openhab-docs/assets/76903043/5be4e197-3301-4e89-9bda-fd8bbf9be18a)|
+
+2Click on `Settings` -> `Things`
   - Depending an your Add-on your system has already detected all your Things automatically (in our example Shelly Things) which you can see on your `Inbox` button.
-  - If your system did not detect all your devices press the `+` button: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/79cef2a7-8c0f-47bd-845b-d905e9ecc579)
-  - click on your Shelly Add-on: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/a61bd43b-6493-4c6e-b37c-ae9774acc20c)
-  - and press scan: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/7bf634ca-7d5d-484d-9c5a-065c5c0a611f)
+ 
+3 - If your system did not detect all your devices press the `+` button, name of binding -> Scan
+
+
   - Click on the Thing you want to add and select in the next popup dialog `Add as Thing`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d804ff92-c4b3-4556-914d-23c6ba0034af)
   - We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-DiningTable-Dimmer`
     - Tip: It makes sense to define a syntax for your Thing names, such as: `AddonName-Room-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.
