@@ -24,23 +24,23 @@ We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, a
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |[Download OpenJDK](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)| |
-|Double click the `.msi` file to start installation (requires admin rights) | |
-|Change "Set JAVA_HOME variable" to "Will be installed on local drive"|![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
+|Double click the `.msi` file to start installation. | Requires admin rights. |
+|Change "Set JAVA_HOME variable" to "Will be installed on local drive." | ![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
 
 ### b.  Install openHAB
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |[Download openHAB](https://www.openhab.org/download/) ||
-|Click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime"|![download_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/9e59b846-4aa6-450d-bad4-dd7ec60add08) |
-|There is no installation program. Simply unzip the downloaded .zip file to your preferred folder like `C:\Program Files\openHAB` (requires admin rights) or `C:\openHAB`|![unzip_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/0bf58a31-2132-4fe8-8a4b-0609d156372b)|
-|Note: In case the machine you are openHAB installing on does not have internaet access please also download the Add-on package from the downloads page by clicking on `Download openHAB Stable Add-ons` and copy it to `..\openHAB\addons`.| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/cb85bf03-1946-4ec7-951c-68f2b4b55a42)|
+|Click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime".|![download_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/9e59b846-4aa6-450d-bad4-dd7ec60add08) |
+|There is no installation program. Simply unzip the downloaded `.zip` file to your preferred folder like `C:\Program Files\openHAB` (requires admin rights) or `C:\openHAB`. | ![unzip_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/0bf58a31-2132-4fe8-8a4b-0609d156372b)|
+|Note: If your openHAB-PC/server doesnot have internet access, you need to download the "Add-ons" package from the downloads page. Click on `Download openHAB Stable Add-ons` and copy the `.kar` file to `..\openHAB\addons`.| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/cb85bf03-1946-4ec7-951c-68f2b4b55a42)|
 
 ### c. Start openHAB
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|Double click on `..\openHAB\start.bat` and minimize the window when you see the following screen. (In case Windows Defender pops up, click "Allow Access")|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)|
-|Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address of your PC>:8080` if you connect from your mobile phone). On the very first start you are asked to create a new user| ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
-|Note: If you want to run openHAB as a service, [see here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)||
+|Double click on `..\openHAB\start.bat` and minimize the window when you see the following screen. (In case Windows Defender pops up, click "Allow Access".)|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)|
+|Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address>:8080/` if you connect from your mobile phone). On the very first start you are asked to create a new user. | ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
+|Note: If you want to run openHAB as a service, [see here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service). ||
 
 
 
@@ -48,12 +48,14 @@ We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, a
 
 Estimated time: 1 minute
 
+|Steps|Notes|
+|----------------------------------------------------------------|---------------------------------------------------------------|
 |After you have created your user, a **Setup Wizard** is started automatically.  The wizzard will perform the following two steps: | You can cancel this wizzard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).|
 |  a. `Set your location` | ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede)|
-|Note: This data will not be sent to outside your network - this step can also be skipped by clicking on `Configure in Settings Later`.  Location is required for for example to determini your local bank holidays| |
+|Note: This data will not be sent to outside your network - this step can also be skipped by clicking on `Configure in Settings Later`.  Location is required for for example to determin your local bank holidays| |
 |  b. `Install Add-Ons` | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d)|
-|Note: Add-ons are components like opanHAB's **bindings**/adapters (to connect to your home automation Things), script languages, persistency services, etc. which are dynamically installed when required. The setup-wizzard already adds three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
-|  During the setup-wizzard - `Select Add-ons to Install` and pick an adapter for your smart lighting system/switch such as:
+|Note: Add-ons are components like opanHAB's **bindings**/adapters (to connect to your home automation Things), script languages, persistency services, etc. which are dynamically installed when required. The setup wizard already adds three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
+|  During the setup wizard - `Select Add-ons to Install` and pick an adapter for your smart lighting system/switch such as:
     - Philips hue
     - Shelly
     - Lutron
