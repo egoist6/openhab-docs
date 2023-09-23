@@ -28,7 +28,8 @@ a. Install OpenJDK runtime v17:
 
 |qwerti   | tffv     |
 |---------|----------------------------|
-|test     | tffvmdn  |
+|test     | ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)  |
+|sfsf     | fddvfsvssscdcsc|
 
 b. Install openHAB:
   - [Download-Link](https://www.openhab.org/download/) (click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime")
