@@ -28,7 +28,7 @@ a. Install OpenJDK runtime v17:
 
 |qwerti   | tffv     |
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|o testdv d v dvdvdh jh kh khkjj hlkjhlkjh lkjhkjh lkjjh khkhj jhkh hhvdvddvd \\n vdvvvvdfvd dv fff     | ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)  |
+|testdv d v dvdvdh jh kh khkjj hlkjhlkjh lkjhkjh lkjjh khkhj jhkh hhvdvddvdvdvvvvdfvd\\n dv fff     | ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)  |
 
 |sfsf     | fddvfsvssscdcsc|
 
