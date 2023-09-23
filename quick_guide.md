@@ -72,10 +72,12 @@ Let's add a Thing now:
 |1. Depending on your binding there are configuration options available. In our example we can provide credentials if the Things are password protected. Click on `Settings` -> `Bindings` -> `<name of Binding>` -> `gear icon` |![mainui_config_binding](https://github.com/egoist6/openhab-docs/assets/76903043/b066fbda-0a6e-46a1-b700-854dfdbdc5ac)|
 |2. Navigate to Things. Click on `Settings` -> `Things`. Depending on your binding your system might have already discovered all your Things automatically (in our example Shelly Things) which you can see in your `Inbox`. |![mainui_things](https://github.com/egoist6/openhab-docs/assets/76903043/5be4e197-3301-4e89-9bda-fd8bbf9be18a)|
 |3. Scan for new Things. If your system did not discover your devices, press the `+` button -> `<name of binding>` -> `Scan`. This will start the discovery process. |![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/230c0c7a-f5f0-4181-b72d-e576c69be3e8)|
-|4. Add a new Thing. After the Thing has been discovered, click on the Thing, then select in the popup dialog `Add as Thing` to add it to your system.| GIF |
+|4. Add a new Thing. After discovery, click on the Thing you wish to add, then select in the popup dialog `Add as Thing` to add it to your system and provie a meaningful name. | GIF  click on `All Things`. Online|
+
+Neues oh installieren, gif erstellen: zuerst scan things, dann starten, dann Add all zeigen und rollershutter und lampe hinzufügen
 
 
-We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-DiningTable-Dimmer`
+We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-FloorLamp-Dimmer` Shelly-LivingRoom-WindowLeft-Rollershutter
   - Tip: It makes sense to define a syntax for your Thing names, such as: `AddonName-Room-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.
   - Hit `ok`
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/728ffdd3-e12d-4bda-a1e6-ecbd840d0a34)
