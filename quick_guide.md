@@ -70,17 +70,13 @@ Let's add a Thing now:
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |1. Whenever you added a new binding, check its configuration options. In our case we can provide credentials if the Things are password protected. |![mainui_config_binding](https://github.com/egoist6/openhab-docs/assets/76903043/b066fbda-0a6e-46a1-b700-854dfdbdc5ac)|
-|2. Navigate to Things|![mainui_things](https://github.com/egoist6/openhab-docs/assets/76903043/5be4e197-3301-4e89-9bda-fd8bbf9be18a)|
-
-2Click on `Settings` -> `Things`
-  - Depending an your Add-on your system has already detected all your Things automatically (in our example Shelly Things) which you can see on your `Inbox` button.
- 
-3 - If your system did not detect all your devices press the `+` button, name of binding -> Scan
+|2. Navigate to Things. Click on `Settings` -> `Things`. Depending an your binding your system might have already discovered all your Things automatically (in our example Shelly Things) which you can see in your `Inbox`. |![mainui_things](https://github.com/egoist6/openhab-docs/assets/76903043/5be4e197-3301-4e89-9bda-fd8bbf9be18a)|
+|3. Scan for new Things. If your system did not discover your devices, press the `+` button -> `name of binding` -> Scan`. This will start the discovery process. |![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/230c0c7a-f5f0-4181-b72d-e576c69be3e8)|
+|4. Add a new Thing. After the Thing has been discovered, click on the Thing, then select in the popup dialog `Add as Thing` to add it to your system.| GIF |
 
 
-  - Click on the Thing you want to add and select in the next popup dialog `Add as Thing`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/d804ff92-c4b3-4556-914d-23c6ba0034af)
-  - We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-DiningTable-Dimmer`
-    - Tip: It makes sense to define a syntax for your Thing names, such as: `AddonName-Room-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.
+We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-DiningTable-Dimmer`
+  - Tip: It makes sense to define a syntax for your Thing names, such as: `AddonName-Room-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.
   - Hit `ok`
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/728ffdd3-e12d-4bda-a1e6-ecbd840d0a34)
   - Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
