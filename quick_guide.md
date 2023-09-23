@@ -26,11 +26,11 @@ a. Install OpenJDK runtime v17:
   - At the beginning of the installation, change "Set JAVA_HOME variable" to "Will be installed on local drive"
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)
 
-|qwerti   | tffv     |
+|Install OpenJDK runtime v17   |      |
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|testdv d v dvdvdh \\n jh kh khkjj hlkjhlkjh lkjhkjh lkjjh khkhj jhkh hhvdvddvdvdvvvvdfvddv fff     | ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)  |
-
-|sfsf     | fddvfsvssscdcsc|
+|[Download OpenJDK](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1d11492a-ec31-4ee6-92d4-73be16294c35)  |
+|Double click the `.msi` file to start installation (requires admin rights) | |
+|change "Set JAVA_HOME variable" to "Will be installed on local drive"|![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
 
 b. Install openHAB:
   - [Download-Link](https://www.openhab.org/download/) (click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime")
