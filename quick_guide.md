@@ -33,29 +33,27 @@ We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, a
 |[Download openHAB](https://www.openhab.org/download/) ||
 |Click on "Windows" -> "Stable" -> "Download openHAB Stable Runtime"|![download_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/9e59b846-4aa6-450d-bad4-dd7ec60add08) |
 |There is no installation program. Simply unzip the downloaded .zip file to your preferred folder like `C:\Program Files\openHAB` (requires admin rights) or `C:\openHAB`|![unzip_openhab](https://github.com/egoist6/openhab-docs/assets/76903043/0bf58a31-2132-4fe8-8a4b-0609d156372b)|
+|Note: In case the machine you are openHAB installing on does not have internaet access please also download the Add-on package from the downloads page by clicking on `Download openHAB Stable Add-ons` and copy it to `..\openHAB\addons`.| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/cb85bf03-1946-4ec7-951c-68f2b4b55a42)|
 
-### c.  Start openHAB
+### c. Start openHAB
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|Double click on `C:\..\openHAB\start.bat` and minimize the window when you see the following screen. (In case Windows Defender pops up, click "Allow Access")|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)|
-|Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address of your PC>:8080` if you connect from your mobile phone). On the very first start you are asked to create a new user| |
-|Note: If you want to run openHAB as a service, see [here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)||
+|Double click on `..\openHAB\start.bat` and minimize the window when you see the following screen. (In case Windows Defender pops up, click "Allow Access")|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6)|
+|Open your browser and navigate to the following URL: [http://localhost:8080/](http://localhost:8080/) (or `<IP-address of your PC>:8080` if you connect from your mobile phone). On the very first start you are asked to create a new user| ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
+|Note: If you want to run openHAB as a service, [see here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service)||
+
+
 
 ## Step 2: Setup Wizard
 
 Estimated time: 1 minute
 
-- After you have created your user and you are logged on, a **Setup Wizard** is automatically started:
-- ![image](https://github.com/egoist6/openhab-docs/assets/76903043/9bf16d68-7d49-4a53-b633-7091bad70da7)
-  - You can cancel at any time this wizzard and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/)
-- Set your location:
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/5b5dff26-4344-4faf-9619-3d4ab0e49139)
-  - This data will not be sent to outside your network (you can also skip this step by clicking on `Configure in Settings Later`)
-  - This data is required for services such as determining your bank holidays for your location
-- Install Add-Ons:
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/cbd7da10-b7a8-465a-90af-6d0468b9672a)
-  - there are already three pre-defined add-ons selected to be installed. During this Guide they are not required but we recommend to install them for a later purpose
-  - Click on `Select Add-ons to Install` and pick an adapter for your smart lighting system/switch such as:
+|After you have created your user, a **Setup Wizard** is started automatically.  The wizzard will perform the following two steps: | You can cancel this wizzard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).|
+|  a. `Set your location` | ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede)|
+|Note: This data will not be sent to outside your network - this step can also be skipped by clicking on `Configure in Settings Later`.  Location is required for for example to determini your local bank holidays| |
+|  b. `Install Add-Ons` | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d)|
+|Note: Add-ons are components like opanHAB's **bindings**/adapters (to connect to your home automation Things), script languages, persistency services, etc. which are dynamically installed when required. The setup-wizzard already adds three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
+|  During the setup-wizzard - `Select Add-ons to Install` and pick an adapter for your smart lighting system/switch such as:
     - Philips hue
     - Shelly
     - Lutron
@@ -63,10 +61,12 @@ Estimated time: 1 minute
     - LIFX
     - KNX, ZigBee, Z-Wave, DALI, MQTT smart switch
     - and many more
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/82078937-451a-43dc-85df-e4566e2e47f9)
   - click `Install 4 add-ons`
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/11389822-2e8f-4fbf-b75e-9ae9229a058b)
 - After installation of Add-ons click on `Get Started` to close the Setup Wizard
+
+config binding
+scan
+
 
 ## Step 3: Adding Lightbulbs to openHAB
 
