@@ -53,6 +53,8 @@ Estimated time: 1 minute
 
 ## Step 3: Adding a smart device to openHAB
 
+Estimated time: 3 minutes
+
 A lightbulb (and many other smart devices) are Internet of **Things** devices (IoT). From now on we simply call those devices in openHAB a [**Thing**](/concepts/things.html), which is a digital representation of your real world smart device.
 
 Before we continue with the next step, please follow our recommendation:
@@ -87,7 +89,7 @@ Let's start adding an Item (postman) to a Thing Channel (mailbox):
 |<li> Click on `Things`, select the Thing we just created and switch to the tab `Channels`.<br/><li> (As you can see there are a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<br/><li> Click `Brightness` -> `Add Link to Item...` -> `Create a new Item`<br/><li> (For simplicity of this Guide we leave all Item attributes and profiles as they are. You'll find [more information here](/configuration/items.html).)<br/><li>Click `Link`| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
 |We have successfully added an Item to a Thing Channel. All Items can be seen here: | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
 
-## Step 4: Create button on GUI 
+## Step 4: Create a button on GUI 
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
@@ -99,16 +101,4 @@ Let's start adding an Item (postman) to a Thing Channel (mailbox):
 <li>![image](https://github.com/egoist6/openhab-docs/assets/76903043/9f8c085b-faf7-4f3e-8101-f36da3912cc0)
 
 ➡️ 
-<br />
-italic: _text_
-table: |
-yellow block
-  ::: warning
-  :::
-blue block
-  ::: tip
-  :::
 
-[Prerequisites]({{base}}/installation/index.html#prerequisites).
-
-  
