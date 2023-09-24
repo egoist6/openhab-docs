@@ -10,7 +10,7 @@ It will give you step-by-step instructions for the whole process from downloadin
 
 You will see how easy it is and you do not have to be a home automation or IT expert.
 
-> ![Note]
+> [!Note]
 > We recommend that you have at least knowledge how to unzip files and what IP addresses are.
 
 [[toc]]
