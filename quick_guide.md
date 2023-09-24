@@ -47,10 +47,9 @@ Estimated time: 1 minute
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|1. After you have created an admin user, a **Setup Wizard** is started automatically. The wizard will configure a few basic settings. | You can cancel this wizard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).|
-|2. Set Language, Region, Time Zone and Location | ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede) Your location will not be sent to outside your network and this step can also be skipped by clicking on `Configure in Settings Later`.  |
-|3a. Click on `Select Add-ons to Install` and select the vendor of your smart device (e.g. [Philips hue](https://www.openhab.org/addons/bindings/hue/), [Lutron](https://www.openhab.org/addons/bindings/lutron/), [yeelight](https://www.openhab.org/addons/bindings/yeelight/), [LIFX](https://www.openhab.org/addons/bindings/lifx/), ...) or the protocol name supported by your smart device (e.g. [KNX](https://www.openhab.org/addons/bindings/knx/), [ZigBee](https://www.openhab.org/addons/bindings/zigbee/), [Z-Wave](https://www.openhab.org/addons/bindings/zwave/), [DALI](https://www.openhab.org/addons/bindings/dali/), [MQTT](https://www.openhab.org/addons/bindings/mqtt/), ...) - in our example "[Shelly](https://www.openhab.org/addons/bindings/shelly/)".<br /><br />3b. Click on `Install 4 add-ons` -> `Get Started`. You will be redirected back to openHAB's GUI, called **MainUI**.<br /><br />Note: Add-ons which connect to your smart device (or services) are called **binding** in openHAB. | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d) The setup wizard already added three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
-|4. For the next step we will be activating MainUI's side bar. | ![mainui_sidebar](https://github.com/egoist6/openhab-docs/assets/76903043/96c82687-809e-4924-8bac-3e24d090c0ac)|
+|1. After you have created an admin user, a **Setup Wizard** is started automatically. Set Language, Region, Time Zone and Location | ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede) Your location will not be sent to outside your network and this step can also be skipped by clicking on `Configure in Settings Later`.<br\>You can cancel this wizard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).  |
+|2a. Click on `Select Add-ons to Install` and select the vendor of your smart device (e.g. [Philips hue](https://www.openhab.org/addons/bindings/hue/), [Lutron](https://www.openhab.org/addons/bindings/lutron/), [yeelight](https://www.openhab.org/addons/bindings/yeelight/), [LIFX](https://www.openhab.org/addons/bindings/lifx/), ...) or the protocol name supported by your smart device (e.g. [KNX](https://www.openhab.org/addons/bindings/knx/), [ZigBee](https://www.openhab.org/addons/bindings/zigbee/), [Z-Wave](https://www.openhab.org/addons/bindings/zwave/), [DALI](https://www.openhab.org/addons/bindings/dali/), [MQTT](https://www.openhab.org/addons/bindings/mqtt/), ...) - in our example "[Shelly](https://www.openhab.org/addons/bindings/shelly/)".<br /><br />2b. Click on `Install 4 add-ons` -> `Get Started`. You will be redirected back to openHAB's GUI, called **MainUI**.<br /><br />Note: Add-ons which connect to your smart device (or services) are called **binding** in openHAB. | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d) The setup wizard already added three pre-defined add-ons. During this Guide they are not required but we recommend to install them for a later purpose.|
+|3. For the next step we will be activating MainUI's side bar. | ![mainui_sidebar](https://github.com/egoist6/openhab-docs/assets/76903043/96c82687-809e-4924-8bac-3e24d090c0ac)|
 
 ## Step 3: Adding a smart device to openHAB
 
@@ -58,41 +57,35 @@ A lightbulb (and many other smart devices) are Internet of **Things** devices (I
 
 Before we continue with the next step, please follow our recommendation:
 
-::: tip
-Whenever you add a new binding to openHAB, please [**always read the documentation of the Add-on!**](https://www.openhab.org/addons/)
-It will save you a lot of time.
-:::
+> [!IMPORTANT]
+> Whenever you add a new binding to openHAB, please [**always read the documentation of the Add-on!**](https://www.openhab.org/addons/)
+> It will save you a lot of time.
 
 ### a. Add a Thing to openHAB
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|1. Depending on your binding there are different configuration options available. In our example we can provide credentials if the Things are password protected. Click on `Settings` -> Add-on Settings: `Show All` -> `<name of Binding>`. In our case all Things have already been discovered automatically. | ![mainui_binding_config](https://github.com/egoist6/openhab-docs/assets/76903043/1b0e759f-b47a-410b-825a-b80a4503b878)|
-|2. Scan for new Things. In case your binding did not discovered your Things yet, we can scan for new Things. Click on `Settings` -> `Things` -> press the `+` button -> `<name of binding>` -> `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
-|3. Add a new Thing. After discovery, click on `<Thing name>` -> `Add as Thing` and enter a meaningful name of your Thing.(You could also select `Add All` at the bottom of the list). Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
+|1. Depending on your binding there are different configuration options available. In our example we can provide credentials if the Things are password protected.<br />Click on `Settings` -> Add-on Settings: `Show All` -> `<name of Binding>`.<br />In our case all Things have already been discovered automatically. | ![mainui_binding_config](https://github.com/egoist6/openhab-docs/assets/76903043/1b0e759f-b47a-410b-825a-b80a4503b878)|
+|2. Scan for new Things.<br />In case your binding did not discovered your Things yet, we can scan for new Things.<br />Click on `Settings` -> `Things` -> press the `+` button -> `<name of binding>` -> `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
+|3. Add a new Thing.<br />After discovery, click on `<Thing name>` -> `Add as Thing` and enter a meaningful name of your Thing.<br />(You could also select `Add All` at the bottom of the list).<br /><br />Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
 
 For the next step we need to provide a little bit of background information first. Please read this section:
 
 > [!IMPORTANT]
 > As you already know a Thing in openHAB is the digital representation of a smart device in our real world. A smart device (and its openHAB Thing) offer a lot of functionalities or capabilities. In case of a smart light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more.
+> 
 > A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels). A **Thing Channel** is similiar to a physical postbox, where information is provided so that a postman can pick them up and transport it to the receiver (such as our MainUI GUI).
-> In our example the postman is called [**Item**](/docs/concepts/items.html). The nice thing about our postman (i.e. item) is, he also works for us and can transport commands (like switch on light) back to the **Thing Channel**.
+> 
+> In our example the postman is called [**Item**](/docs/concepts/items.html). The nice thing about our postman (i.e. item) is, he also works for us and can transport commands (like switch on light) back to the **Thing Channel**. To be more precise with the terms we use, an **Item** has a _state_ (like on/off, closed/open, 34 °C, 50%, 2 kWh), can send _commands_, can _trigger a rule_, can be _persisted_ and _interact with the GUI_ we are creating in one of the next steps.
 
 ### b. Add Items to a Thing
 
+Let's start adding an Item (postman) to a Thing Channel (mailbox):
+
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|Your thing has been added and we navigate back to the main
-  menu by clickig twice in the upper left corner on `<Things` -> `<Settings` Click on `Things`:| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/153d69cf-d1c4-4b5b-8fab-e87629f74fdc)|
+|<li> Click on `Things`, select the Thing we just created and switch to the tab `Channels`.<br\>(As you can see there are a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<br\><li> Click `Brightness` -> `Add Link to Item...` -> `Create a new Item`<br\><li> (For simplicity of this Guide we leave all Item attributes and profiles as they are. You'll find [more information here](/configuration/items.html).<br\><li>Click `Link`| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
 
-- [x] and your screen should look like this: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1f713c53-83b5-481b-9661-3b30f66eb811)
-- [x] Click on the Thing we just created.As we said above, this Thing is the digital representative of your smart dimmer (dimmable lightbulb).
-  - The Thing config page has three tabs. Click on the tab `Channels`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/155f560d-1b00-426b-b961-237fadf3344a)
-  - As you can see, your Thing 
-  cont. and create brightness thing
-
-Gui interacts with Items, have a state, receive commands, persist, 
-rewrite addons to binding
 
 ## What next?
 [Model](/tutorial/model.html)
