@@ -83,7 +83,7 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 
 Estimated time: x minutes
 
-We will be adding slider button to the GUI. By clicking ... we get a popup with slider, values from 1 100. By clicking the button toggles on/of
+In our last step we will be adding a slider button for our dimmable smart device to the GUI. The button switches the light off and restores the dimmed value we had before the last switch off. If you click the small menu icon of the button, a popup appears where you comfortable can set the new value.
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
