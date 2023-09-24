@@ -61,7 +61,7 @@ A lightbulb (and many other smart devices) are Internet of **Things** devices (I
 Before we continue with the next step, please follow our recommendation:
 
 ::: tip
-Whenever you add a new binding to openHAB, please [**always read the documentation of the Add-on**](https://www.openhab.org/addons/)!
+Whenever you add a new binding to openHAB, please [**always read the documentation of the Add-on!**](https://www.openhab.org/addons/)
 It will save you a lot of time.
 :::
 
@@ -69,16 +69,10 @@ Let's add a Thing now:
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|1. Depending on your binding there are configuration options available. In our example we can provide credentials if the Things are password protected. Click on `Settings` -> `Bindings` -> `<name of Binding>` -> `gear icon` |![mainui_config_binding](https://github.com/egoist6/openhab-docs/assets/76903043/b066fbda-0a6e-46a1-b700-854dfdbdc5ac)|
-|2. Navigate to Things. Click on `Settings` -> `Things`. Depending on your binding your system might have already discovered all your Things automatically (in our example Shelly Things) which you can see in your `Inbox`. |![mainui_things](https://github.com/egoist6/openhab-docs/assets/76903043/5be4e197-3301-4e89-9bda-fd8bbf9be18a)|
-|3. Scan for new Things. If your system did not discover your devices, press the `+` button -> `<name of binding>` -> `Scan`. This will start the discovery process. |![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/230c0c7a-f5f0-4181-b72d-e576c69be3e8)|
-|4. Add a new Thing. After discovery, click on the Thing you wish to add, then select in the popup dialog `Add as Thing` to add it to your system and provie a meaningful name. | GIF  click on `All Things`. Online|
-
-Neues oh installieren, gif erstellen: zuerst scan things, dann starten, dann Add all zeigen und rollershutter und lampe hinzufügen
-
-
-We recommend to provide a name which identifies your Thing such as: `Shelly-LivingRoom-FloorLamp-Dimmer` Shelly-LivingRoom-WindowLeft-Rollershutter
-  - Tip: It makes sense to define a syntax for your Thing names, such as: `AddonName-Room-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.
+|1. Depending on your binding there are different configuration options available. In our example we can provide credentials if the Things are password protected. Click on `Settings` -> Add-on Settings: `Show All` -> `<name of Binding>`. In our case all Things have already been discovered automatically. | ![mainui_binding_config](https://github.com/egoist6/openhab-docs/assets/76903043/1b0e759f-b47a-410b-825a-b80a4503b878)|
+|2. Scan for new Things. In case your binding did not discovered your Things yet, we can scan for new Things. Click on `Settings` -> `Things` -> press the `+` button -> `<name of binding>` -> `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
+|3. Add a new Thing. After discovery, click on `<Thing name>` -> `Add as Thing` and enter a meaningful name of your Thing.(You could also select `Add All` at the bottom of the list). |  |
+|2. Navigate to Things. Click  Depending on your binding your system might have already discovered all your Things automatically (in our example Shelly Things) which you can see in your `Inbox`. | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: `BindingName-RoomName-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.|
   - Hit `ok`
   - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/728ffdd3-e12d-4bda-a1e6-ecbd840d0a34)
   - Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
