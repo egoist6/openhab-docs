@@ -73,11 +73,16 @@ It will save you a lot of time.
 |2. Scan for new Things. In case your binding did not discovered your Things yet, we can scan for new Things. Click on `Settings` -> `Things` -> press the `+` button -> `<name of binding>` -> `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
 |3. Add a new Thing. After discovery, click on `<Thing name>` -> `Add as Thing` and enter a meaningful name of your Thing.(You could also select `Add All` at the bottom of the list). Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
 
-### b. Configure a Thing
-
+For the next step we need to provide a little bit of background information first. Pleae reads this section:
 ::: tip
-A smart device and its digital representation in openHAB ("Thing") offer a lot of functionalities or capabilities. In case of a light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more. A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels). A **Thing Channel** is similiar to a physical postbox, where information is provided so that a postman can pick them up and transport it to the receiver (such as our MainUI GUI). In our example the postman is called [**Item**](https://www.openhab.org/docs/concepts/items.html). The nice thing about our postman (i.e. item) is, he also works for us and can transport commands (like switch on light) back to the **Thing Channel**.
+As you already know a Thing in openHAB is the digital representation of a smart device in our real world. A smart device (and its openHAB Thing) offer a lot of functionalities or capabilities. In case of a smart light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more.
+
+A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels). A **Thing Channel** is similiar to a physical postbox, where information is provided so that a postman can pick them up and transport it to the receiver (such as our MainUI GUI).
+
+In our example the postman is called [**Item**](/docs/concepts/items.html). The nice thing about our postman (i.e. item) is, he also works for us and can transport commands (like switch on light) back to the **Thing Channel**.
 :::
+
+### b. Add Items to a Thing
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
