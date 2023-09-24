@@ -66,7 +66,7 @@ Before we continue with the next step, please follow our recommendation:
 > [!IMPORTANT]
 > For the next step we need to provide a little bit of background information first:
 > 
-> As you already know a Thing in openHAB is the digital representation of a smart device in our real world. A smart device (and its openHAB Thing) offer a lot of functionalities or capabilities. In case of a smart light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more.
+> As you already know a Thing in openHAB is the digital representation of a smart device in our real world. A smart device (and its openHAB Thing) offers a lot of functionalities or capabilities. In case of a smart light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more.
 > 
 > A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels). A **Thing Channel** is similiar to a physical postbox, where information is provided so that a postman can pick them up and transport it to the receiver (such as our MainUI GUI).
 > 
@@ -85,8 +85,11 @@ Estimated time: x minutes
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|<li>||
+|Add button to GUI<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Slider Cell`<li>(for roller shutters use `Rollershutter Cell`)<li>(for use `Colorpicker Cell`)<li>(for switches use `Label Cell`)| ![mainui_add_slider](https://github.com/egoist6/openhab-docs/assets/76903043/75912670-9a07-44be-ae04-ffa5239bfbe8)|
+|Configure slider button<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Label Cell`|  |
 
+
+ ➡️ `` ➡️ `` 
 
 
 ## What next?
