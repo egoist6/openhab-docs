@@ -65,24 +65,27 @@ Whenever you add a new binding to openHAB, please [**always read the documentati
 It will save you a lot of time.
 :::
 
-Let's add a Thing now:
+### a.) Add a Thing to openHAB
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |1. Depending on your binding there are different configuration options available. In our example we can provide credentials if the Things are password protected. Click on `Settings` -> Add-on Settings: `Show All` -> `<name of Binding>`. In our case all Things have already been discovered automatically. | ![mainui_binding_config](https://github.com/egoist6/openhab-docs/assets/76903043/1b0e759f-b47a-410b-825a-b80a4503b878)|
 |2. Scan for new Things. In case your binding did not discovered your Things yet, we can scan for new Things. Click on `Settings` -> `Things` -> press the `+` button -> `<name of binding>` -> `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
-|3. Add a new Thing. After discovery, click on `<Thing name>` -> `Add as Thing` and enter a meaningful name of your Thing.(You could also select `Add All` at the bottom of the list). |  |
-|2. Navigate to Things. Click  Depending on your binding your system might have already discovered all your Things automatically (in our example Shelly Things) which you can see in your `Inbox`. | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: `BindingName-RoomName-PlaceOrPurpose-ThingType` and apply them consistently across all your Things.|
-  - Hit `ok`
-  - ![image](https://github.com/egoist6/openhab-docs/assets/76903043/728ffdd3-e12d-4bda-a1e6-ecbd840d0a34)
-  - Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
-- Click on `Things`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/153d69cf-d1c4-4b5b-8fab-e87629f74fdc)
+|3. Add a new Thing. After discovery, click on `<Thing name>` -> `Add as Thing` and enter a meaningful name of your Thing.(You could also select `Add All` at the bottom of the list). Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
 
-- and your screen should look like this: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1f713c53-83b5-481b-9661-3b30f66eb811)
+### b. Configure a Thing
 
-  - Click on the Thing we just created.As we said above, this Thing is the digital representative of your smart dimmer (dimmable lightbulb).
+A smart device and its digital representation in openHAB ("Thing") offer a lot of functionalities or capabilities. In case of a light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more. A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels) and an **Item** will transport these information to various "consumers" such as MainUI GUI.
+
+
+), which want to start sending their information. These communication channels are simply called  and you need to activate them as you might do not need all of them.
+
+Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
+Click on `Things`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/153d69cf-d1c4-4b5b-8fab-e87629f74fdc)
+and your screen should look like this: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1f713c53-83b5-481b-9661-3b30f66eb811)
+Click on the Thing we just created.As we said above, this Thing is the digital representative of your smart dimmer (dimmable lightbulb).
   - The Thing config page has three tabs. Click on the tab `Channels`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/155f560d-1b00-426b-b961-237fadf3344a)
-  - As you can see, your Thing offers a lot of functionalities or capabilities (like set brightness, button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more), which want to start sending their information. These communication channels are simply called [**Channels**](/concepts/things.html#channels) and you need to activate them as you might do not need all of them.
+  - As you can see, your Thing 
   cont. and create brightness thing
 
 Gui interacts with Items, have a state, receive commands, persist, 
