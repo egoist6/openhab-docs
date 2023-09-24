@@ -75,11 +75,13 @@ It will save you a lot of time.
 
 ### b. Configure a Thing
 
-A smart device and its digital representation in openHAB ("Thing") offer a lot of functionalities or capabilities. In case of a light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more. A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels) and an **Item** will transport these information to various "consumers" such as MainUI GUI.
+::: tip
+A smart device and its digital representation in openHAB ("Thing") offer a lot of functionalities or capabilities. In case of a light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more. A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels). A **Thing Channel** is similiar to a physical postbox, where information is provided so that a postman can pick them up and transport it to the receiver (such as our MainUI GUI). In our example the postman is called [**Item**](https://www.openhab.org/docs/concepts/items.html). The nice thing about our postman (i.e. item) is, he also works for us and can transport commands (like switch on light) back to the **Thing Channel**.
+:::
 
-
-), which want to start sending their information. These communication channels are simply called  and you need to activate them as you might do not need all of them.
-
+|Steps|Notes|
+|----------------------------------------------------------------|---------------------------------------------------------------|
+|1. 
 Your thing has been added and we navigate back to the main menu by clickig twice in the upper left corner on `<Things` -> `<Settings`
 Click on `Things`: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/153d69cf-d1c4-4b5b-8fab-e87629f74fdc)
 and your screen should look like this: ![image](https://github.com/egoist6/openhab-docs/assets/76903043/1f713c53-83b5-481b-9661-3b30f66eb811)
