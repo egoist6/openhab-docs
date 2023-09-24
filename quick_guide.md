@@ -63,9 +63,9 @@ Before we continue with the next step, please follow our recommendation:
 |Scan for new Things<li>In case your binding did not discovered your Things yet, we can scan for new Things.<li>Click `Settings` -> `Things` ➡️ press the `+` button ➡️ `<name of binding>` ➡️ `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
 |Add a new Thing<li>After discovery, click `<Thing name>` ➡️ `Add as Thing` ➡️ enter a meaningful name of your Thing.<li>(You could also select `Add All` at the bottom of the list).<br /><br />Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
 
-For the next step we need to provide a little bit of background information first:
-
 > [!IMPORTANT]
+> For the next step we need to provide a little bit of background information first:
+> 
 > As you already know a Thing in openHAB is the digital representation of a smart device in our real world. A smart device (and its openHAB Thing) offer a lot of functionalities or capabilities. In case of a smart light bulb (or a smart device controlling a light bulb) these are: set brightness, detect physical button press, power consumption, trigger alarms (e.g. overheating), signal strength, and many more.
 > 
 > A Thing in openHAB provides these different information, status, events, etc. seperately in different Communication-[**Channels**](/concepts/things.html#channels). A **Thing Channel** is similiar to a physical postbox, where information is provided so that a postman can pick them up and transport it to the receiver (such as our MainUI GUI).
@@ -79,16 +79,14 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 |Add item to a Thing<li> Click `Things` ➡️ select the Thing we just created ➡️ switch to the tab `Channels`.<li> (As you can see there are quite a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<li> Click `Brightness` ➡️ `Add Link to Item...` ➡️ `Create a new Item` ➡️ `Link`<li> (During this Quick Guide it is not required to change Item attributes and profiles as you may have noticed in this step. You'll find [more information here for later on](/configuration/items.html).)| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
 |Overview of all Items in openHAB.<br/><br/>Congratulations, you have added your first Item to an openHAB Thing! | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
 
-## Step 4: Create a button on GUI 
+## Step 4: Configure GUI / create automation
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|<li>
+|<li>||
 
 
 ## What next?
-<li>[Model](/tutorial/model.html)
-<li>![image](https://github.com/egoist6/openhab-docs/assets/76903043/9f8c085b-faf7-4f3e-8101-f36da3912cc0)
 
-➡️ 
-
+![Model](/tutorial/model.html)
+![image](https://github.com/egoist6/openhab-docs/assets/76903043/9f8c085b-faf7-4f3e-8101-f36da3912cc0)
