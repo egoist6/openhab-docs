@@ -31,7 +31,7 @@ We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, a
 |Download & Install OpenJDK<li>Download OpenJDK from [OpenJDK Download Website](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)<li>Double click the `.msi` file to start installation|openHAB requires Java runtime (JRE) version 17<br/>Installation of OpenJDP requires admin rights |
 |Before installation starts, change "Set JAVA_HOME variable" to "Will be installed on local drive." | ![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
 |Start openHAB<li>Double click `..\openHAB\start.bat` and minimize the window when you see the following screen.<li>(In case Windows Defender pops up, click `Allow Access`.)|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6) If you want to run openHAB as a service, [see here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service).|
-|Open openHAB GUI<li>Open [http://localhost:8080/](http://localhost:8080/) in your browser<li>(or `<IP-address>:8080/` if you connect from your mobile phone).<li>On the very first start you are asked to create an admin user. | ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
+|Open openHAB GUI<li>Open [http://localhost:8080/](http://localhost:8080/) in your browser<li>(or `<IP-address>:8080/` if you connect from your mobile phone).<li>On the very first start you are asked to create an admin user.<br/><br/>Congratulations, you have successfully installed openHAB! | ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
 
 ## Step 2: Setup Wizard
 
@@ -77,7 +77,7 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |Add item to a Thing<li> Click `Things` ➡️ select the Thing we just created ➡️ switch to the tab `Channels`.<li> (As you can see there are quite a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<li> Click `Brightness` ➡️ `Add Link to Item...` ➡️ `Create a new Item` ➡️ `Link`<li> (During this Quick Guide it is not required to change Item attributes and profiles as you may have noticed in this step. You'll find [more information here for later on](/configuration/items.html).)| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
-|Overview of all Items in openHAB<br/>Congratulations, you have added your first Item to an openHAB Thing! | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
+|Overview of all Items in openHAB.<br/><br/>Congratulations, you have added your first Item to an openHAB Thing! | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
 
 ## Step 4: Create a button on GUI 
 
