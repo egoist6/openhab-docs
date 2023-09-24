@@ -81,9 +81,12 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 
 ## Step 4: Configure GUI / create automation
 
+Estimated time: x minutes
+
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |<li>||
+
 
 
 ## What next?
