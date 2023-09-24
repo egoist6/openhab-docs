@@ -83,11 +83,16 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 
 Estimated time: x minutes
 
+We will be adding slider button to the GUI. By clicking ... we get a popup with slider, values from 1 100. By clicking the button toggles on/of
+
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |Add button to GUI<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Slider Cell`<li>(for roller shutters use `Rollershutter Cell`)<li>(for use `Colorpicker Cell`)<li>(for switches use `Label Cell`)| ![mainui_add_slider](https://github.com/egoist6/openhab-docs/assets/76903043/75912670-9a07-44be-ae04-ffa5239bfbe8)|
-|Configure slider button<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Label Cell`|  |
+|Configure slider button<br/>Explanation of the configuration parameters:<li>`Header`, `Title`, `Subtitle`, `Footer`: these are labels<li>`Slider Item`: item which we send a command to when using a slider<li>`Action`: Action to perform when the button is pressed (here: Toggle Item)<li>`Action Item`: item which we send a command to when pressing the button`| ![mainui_configure_slider](https://github.com/egoist6/openhab-docs/assets/76903043/4bad9112-5b9f-4d79-abcc-081a5d0aede2)|
 
+|run now, toggle on off, open popup |  |
+|start overview page from browser |  |
+|change cell, =(items.ShellyLivingRoomFloorLampDimmer_Brightness.state == "0")?true:false to see if Light is on or off||
 
  ➡️ `` ➡️ `` 
 
@@ -95,4 +100,6 @@ Estimated time: x minutes
 ## What next?
 
 ![Model](/tutorial/model.html)
+Widgets
+Examples of widgets and pages
 ![image](https://github.com/egoist6/openhab-docs/assets/76903043/9f8c085b-faf7-4f3e-8101-f36da3912cc0)
