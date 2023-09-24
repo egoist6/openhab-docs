@@ -84,7 +84,7 @@ Let's start adding an Item (postman) to a Thing Channel (mailbox):
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|<li> Click on `Things`, select the Thing we just created and switch to the tab `Channels`.<br\><li> (As you can see there are a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<br\><li> Click `Brightness` -> `Add Link to Item...` -> `Create a new Item`<br\><li> (For simplicity of this Guide we leave all Item attributes and profiles as they are. You'll find [more information here](/configuration/items.html).<br\><li>Click `Link`| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
+|<li> Click on `Things`, select the Thing we just created and switch to the tab `Channels`.<br/><li> (As you can see there are a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<br/><li> Click `Brightness` -> `Add Link to Item...` -> `Create a new Item`<br/><li> (For simplicity of this Guide we leave all Item attributes and profiles as they are. You'll find [more information here](/configuration/items.html).)<br/><li>Click `Link`| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
 |We have successfully added an Item to a Thing Channel. All Items can be seen here: | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
 
 ## Step 4: Create button on GUI 
