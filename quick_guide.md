@@ -30,7 +30,7 @@ We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, a
 |Note<br/>If your openHAB-PC/server does not have internet access, you need to download the "Add-ons" package from the downloads page. Click `Download openHAB Stable Add-ons` and copy the `.kar` file to `..\openHAB\addons`.| ![image](https://github.com/egoist6/openhab-docs/assets/76903043/cb85bf03-1946-4ec7-951c-68f2b4b55a42)|
 |Download & Install OpenJDK<li>Download OpenJDK from [OpenJDK Download Website](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)<li>Double click the `.msi` file to start installation|openHAB requires Java runtime (JRE) version 17<br/>Installation of OpenJDP requires admin rights |
 |Before installation starts, change "Set JAVA_HOME variable" to "Will be installed on local drive." | ![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
-|Start openHAB<li>Double click `..\openHAB\start.bat` and minimize the window when you see the following screen.<li>(In case Windows Defender pops up, click `Allow Access`.)|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6) If you want to run openHAB as a service, [see here](installation/windows.html#set-up-openhab-to-run-as-a-windows-service).|
+|Start openHAB<li>Double click `..\openHAB\start.bat` and minimize the window when you see the following screen.<li>(In case Windows Defender pops up, click `Allow Access`.)|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6) If you want to run openHAB as a service, [see here](/installation/windows.html#set-up-openhab-to-run-as-a-windows-service).|
 |Open openHAB GUI<li>Open [http://localhost:8080/](http://localhost:8080/) in your browser<li>(or `<IP-address>:8080/` if you connect from your mobile phone).<li>On the very first start you are asked to create an admin user.<br/><br/>Congratulations, you have successfully installed openHAB! | ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
 
 ## Step 2: Setup Wizard
@@ -60,7 +60,7 @@ Before we continue with the next step, please follow our recommendation:
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |Configure Binding<li>Click `Settings` ➡️ `Show All` (Add-on Settings) ➡️ `<name of Binding>`.<li>(These settings depend on your specific Binding. In our case we provide credentials, because the smart controller is password protected)<li>Note: In our case openHAB has already discovered all Things automatically. | ![mainui_binding_config](https://github.com/egoist6/openhab-docs/assets/76903043/1b0e759f-b47a-410b-825a-b80a4503b878)|
-|Scan for new Things<li>In case your binding did not discovered your Things yet, we can scan for new Things.<li>Click `Settings` -> `Things` ➡️ press the `+` button ➡️ `<name of binding>` ➡️ `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
+|Scan for new Things<li>In case your binding did not discovered your Things yet, we can scan for new Things.<li>Click `Settings` ➡️ `Things` ➡️ press the `+` button ➡️ `<name of binding>` ➡️ `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
 |Add a new Thing<li>After discovery, click `<Thing name>` ➡️ `Add as Thing` ➡️ enter a meaningful name of your Thing.<li>(You could also select `Add All` at the bottom of the list).<br /><br />Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
 
 > [!IMPORTANT]
@@ -83,19 +83,19 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 
 Estimated time: x minutes
 
-In our last step we will be adding a slider button for our dimmable smart device to the GUI. The button switches the light off and restores the dimmed value we had before the last switch off. If you click the small menu icon of the button, a popup appears where you comfortable can set the new value.
+In our last step we will be adding a slider button for our dimmable smart device to the GUI. The button switches the light off and restores the dimmed value when switching on. If you click the menu icon of the button ![image](https://github.com/egoist6/openhab-docs/assets/76903043/7a24b879-783d-4cb9-b554-5e7113ab36ee), a popup appears where you comfortably can set the new value.
+
+todo add gif here, change size of threedots
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|Add button to GUI<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Slider Cell`<li>(for roller shutters use `Rollershutter Cell`)<li>(for use `Colorpicker Cell`)<li>(for switches use `Label Cell`)| ![mainui_add_slider](https://github.com/egoist6/openhab-docs/assets/76903043/75912670-9a07-44be-ae04-ffa5239bfbe8)|
-|Configure slider button<br/>Explanation of the configuration parameters:<li>`Header`, `Title`, `Subtitle`, `Footer`: these are labels<li>`Slider Item`: item which we send a command to when using a slider<li>`Action`: Action to perform when the button is pressed (here: Toggle Item)<li>`Action Item`: item which we send a command to when pressing the button`| ![mainui_configure_slider](https://github.com/egoist6/openhab-docs/assets/76903043/4bad9112-5b9f-4d79-abcc-081a5d0aede2)|
+|Add slider button to GUI<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Slider Cell`<li>(for roller shutters use `Rollershutter Cell`)<li>(for use `Colorpicker Cell`)<li>(for switches use `Label Cell`)| ![mainui_add_slider](https://github.com/egoist6/openhab-docs/assets/76903043/75912670-9a07-44be-ae04-ffa5239bfbe8)|
+|Configure slider button<br/>Explanation of the configuration parameters:<li>`Header`, `Title`, `Subtitle`, `Footer`: these are labels<li>`Slider Item`: item which we send a command to when using a slider<li>`Action`: Action to perform when the button is pressed (here: Toggle Item)<li>`Action Item`: item which we send a command to when pressing the button| ![mainui_configure_slider](https://github.com/egoist6/openhab-docs/assets/76903043/4bad9112-5b9f-4d79-abcc-081a5d0aede2)|
+|Test slider button<li>Click `Run Now`, toggle on off, open popup |  |
+|no button color change to see if Light is on or off, advanced settings =(@'ShellyLivingRoomFloorLampDimmer_Brightness' == "0")?true:false, hit save button||
+|View the whole page<li>Open [http://localhost:8080/page/overview](http://localhost:8080/page/overview) in a new tab of your browser<li>(or `<IP-address>:8080/page/overview` on your mobile Phone)|  |
 
-|run now, toggle on off, open popup |  |
-|start overview page from browser |  |
-|change cell, =(items.ShellyLivingRoomFloorLampDimmer_Brightness.state == "0")?true:false to see if Light is on or off||
-
- ➡️ `` ➡️ `` 
-
+todo maybe add a result what the reader will have learnt by the end of each step
 
 ## What next?
 
