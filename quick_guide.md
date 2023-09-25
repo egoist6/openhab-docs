@@ -83,9 +83,9 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 
 Estimated time: x minutes
 
-In our last step we will be adding a slider button for our dimmable smart device to the GUI. The button switches the light off and restores the dimmed value when switching on. If you click the menu icon of the button ![image](https://github.com/egoist6/openhab-docs/assets/76903043/7a24b879-783d-4cb9-b554-5e7113ab36ee), a popup appears where you comfortably can set the new value.
+In our last step we will be adding a slider button for our dimmable smart device to the GUI. The button switches the light off and restores the dimmed value when switching on. If you click the menu icon of the button `⋮`, a popup appears where you comfortably can set the new value.
 
-todo add gif here, change size of threedots
+todo: add gif here of slider widget, to see what we are going to do in this step.
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
