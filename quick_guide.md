@@ -94,8 +94,10 @@ todo add gif here, change size of threedots
 |Test slider button<li>Click `Run Now`, toggle on off, open popup |  |
 |no button color change to see if Light is on or off, advanced settings =(@'ShellyLivingRoomFloorLampDimmer_Brightness' == "0")?true:false, hit save button||
 |View the whole page<li>Open [http://localhost:8080/page/overview](http://localhost:8080/page/overview) in a new tab of your browser<li>(or `<IP-address>:8080/page/overview` on your mobile Phone)|  |
+|done. these are the fundamentals. now home **automation** begins: create rule and schedule| |
 
-todo maybe add a result what the reader will have learnt by the end of each step
+todo
+add a result in the beginning what the reader will have learnt by the end of each step
 
 ## What next?
 
