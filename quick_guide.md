@@ -30,7 +30,9 @@ We are going to intall openHAB on a Windows PC. Almost any Windows PC will do, a
 |Download & Install OpenJDK<li>Download OpenJDK from [OpenJDK Download Website](https://cdn.azul.com/zulu/bin/zulu17.44.53-ca-jre17.0.8.1-win_x64.msi)<li>Double click the `.msi` file to start installation|openHAB requires Java runtime (JRE) version 17<br/>Installation of OpenJDP requires admin rights |
 |Before installation starts, change "Set JAVA_HOME variable" to "Will be installed on local drive." | ![java_home](https://github.com/egoist6/openhab-docs/assets/76903043/e3bf9c45-3fae-417a-b4c9-75328048d90b)|
 |Start openHAB<li>Double click `..\openHAB\start.bat` and minimize the window when you see the following screen.<li>(In case Windows Defender pops up, click `Allow Access`.)|![image](https://github.com/egoist6/openhab-docs/assets/76903043/f5ff4a12-3c49-48de-95de-fe6aa99c82b6) If you want to run openHAB as a service, [see here](/installation/windows.html#set-up-openhab-to-run-as-a-windows-service).|
-|Open openHAB GUI<li>Open [http://localhost:8080/](http://localhost:8080/) in your browser<li>(or `<IP-address>:8080/` if you connect from another device (such as your mobile phone).<li>On the very first start you are asked to create an admin user.<br/><br/>Congratulations, you have successfully installed openHAB! | ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
+|Open openHAB GUI<li>Open [http://localhost:8080/](http://localhost:8080/) in your browser<li>(or `<IP-address>:8080/` if you connect from another device (such as your mobile phone).<li>On the very first start you are asked to create an admin user. | ![create_admin](https://github.com/egoist6/openhab-docs/assets/76903043/e84ee45e-3ed2-4ff5-a8a6-3d0cce8c5e89)|
+
+Congratulations, you have successfully installed openHAB!
 
 ## Step 2: Setup Wizard
 
@@ -60,7 +62,9 @@ Before we continue with the next step, please follow our recommendation:
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |Configure Binding (optional)<li>Check if there are any important settings available for your Binding first<li>Click `Settings` ➡️ `Show All` (Add-on Settings) ➡️ `<name of Binding>`.<li>(These settings depend on your specific Binding. In our case we provide credentials, because the smart controller is password protected)<li>Note: In our case openHAB has already discovered many Things automatically. | ![mainui_binding_config](https://github.com/egoist6/openhab-docs/assets/76903043/1b0e759f-b47a-410b-825a-b80a4503b878)|
 |Scan for new Things<li>In case your binding did not discovered your Things yet, we can scan for new Things.<li>Click `Settings` ➡️ `Things` ➡️ press the `+` button ➡️ `<name of binding>` ➡️ `Scan`. | ![mainui_things_scan](https://github.com/egoist6/openhab-docs/assets/76903043/1a853cbb-f8cf-45cb-8e75-b42caf8ea1c5) |
-|Add a new Thing<li>After discovery, click `<Thing name>` ➡️ `Add as Thing` ➡️ enter a meaningful name of your Thing.<li>(You could also select `Add All` at the bottom of the list).<br /><br />Congratulations, you have added your first Thing to openHAB! | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
+|Add a new Thing<li>After discovery, click `<Thing name>` ➡️ `Add as Thing` ➡️ enter a meaningful name of your Thing.<li>(You could also select `Add All` at the bottom of the list). | ![mainui_things_add](https://github.com/egoist6/openhab-docs/assets/76903043/7db86de8-053d-445c-9e91-86b67f1b273f) We recommend to define a syntax for your Thing names, such as: _BindingName-RoomName-PlaceOrPurpose-ThingType_ and apply them consistently across all your Things.|
+
+Congratulations, you have added your first Thing to openHAB!
 
 > [!IMPORTANT]
 > For the next step we need to provide a little bit of background information first:
@@ -76,7 +80,9 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |Add Item to a Thing<li> Click `Things` ➡️ select the Thing we just created ➡️ switch to the tab `Channels`.<li> (As you can see there are quite a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<li> Click `Brightness` ➡️ `Add Link to Item...` ➡️ `Create a new Item` ➡️ `Link`<li> (During this Quick Guide it is not required to change Item attributes and profiles as you may have noticed in this step. You'll find more information for later on [here (Items)](/configuration/items.html) and [here (Model)](/tutorial/model.html).)| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
-|Overview of all Items in openHAB.<br/><br/>Congratulations, you have added your first Item to an openHAB Thing! | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
+|Overview of all Items in openHAB. | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
+
+Congratulations, you have added your first Item to an openHAB Thing!
 
 ## Step 4: Configure GUI / create automation
 
