@@ -102,8 +102,7 @@ In our last step we will be adding a slider button for our dimmable smart device
 |done. these are the fundamentals. now home **automation** begins: create rule and schedule| |
 
 **todo**
-congratulations below table
-add a result in the beginning what the reader will have learnt by the end of each step
+add a result/gif in the beginning what the reader will have learnt by the end of each step
 
 ## What next?
 
