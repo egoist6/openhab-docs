@@ -84,18 +84,18 @@ Estimated time: x minutes
 
 In our last step we will be adding a slider button for our dimmable smart device to the GUI. The button switches the light off and restores the dimmed value when switching on. If you click the menu icon of the button `⋮`, a popup appears where you comfortably can set the new value.
 
-todo: add gif here of slider widget, to see what we are going to do in this step.
+**todo**: add gif here of slider widget, to see what we are going to do in this step.
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
 |Add slider button to GUI<li>Click `Pages` ➡️ `Add Block` ➡️ `Add Cells` ➡️ `+` ➡️ `Slider Cell`<li>(for roller shutters use `Rollershutter Cell`)<li>(for color lamps use `Colorpicker Cell`)<li>(for switches use `Label Cell`)| ![mainui_add_slider](https://github.com/egoist6/openhab-docs/assets/76903043/75912670-9a07-44be-ae04-ffa5239bfbe8)|
 |Configure slider button<br/>Explanation of the configuration parameters:<li>`Header`, `Title`, `Subtitle`, `Footer`: these are labels<li>`Slider Item`: item which we send a command to when using a slider<li>`Action`: Action to perform when the button is pressed (here: Toggle Item)<li>`Action Item`: item which we send a command to when pressing the button| ![mainui_configure_slider](https://github.com/egoist6/openhab-docs/assets/76903043/4bad9112-5b9f-4d79-abcc-081a5d0aede2)|
-|Test slider button<li>Click `Run Now`, toggle on off, open popup |  |
+|**continue here** Test slider button<li>Click `Run Now`, toggle on off, open popup |  |
 |no button color change to see if Light is on or off, advanced settings =(@'ShellyLivingRoomFloorLampDimmer_Brightness' == "0")?true:false, hit save button||
 |View the whole page<li>Open [http://localhost:8080/page/overview](http://localhost:8080/page/overview) in a new tab of your browser<li>(or `<IP-address>:8080/page/overview` on other devices such as your mobile phone)|  |
 |done. these are the fundamentals. now home **automation** begins: create rule and schedule| |
 
-todo
+**todo**
 congratulations below table
 add a result in the beginning what the reader will have learnt by the end of each step
 
