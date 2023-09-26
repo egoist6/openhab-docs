@@ -40,7 +40,7 @@ On the first run and after you have created an admin user, a **Setup Wizard** is
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|Basic Settings<li>Set Language, Region, Time Zone<li>Set Location of your home<li>Click `Configure in Settings Later` to skip this step| ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede) Your location will not be sent outside your network.<br/>You can cancel this wizard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).  |
+|Basic Settings<li>Set Language, Region, Time Zone<li>Set Location of your home<li>Click `Configure in Settings Later` to skip this step| ![setup_wizzard_location](https://github.com/egoist6/openhab-docs/assets/76903043/8a5391b1-acc6-4723-aa04-4ab2e6f72ede) openHAB does not collect _any_ information from users, so your location will not be sent outside your network.<br/>You can cancel this wizard at any time and continue later by navigating to the following site: [http://localhost:8080/setup-wizard/](http://localhost:8080/setup-wizard/).  |
 |Add-ons<li>Click `Select Add-ons to Install` ➡️ select the vendor of your smart device (e.g. [Philips hue](https://www.openhab.org/addons/bindings/hue/), [Lutron](https://www.openhab.org/addons/bindings/lutron/), [yeelight](https://www.openhab.org/addons/bindings/yeelight/), [LIFX](https://www.openhab.org/addons/bindings/lifx/), ...) or the protocol name supported by your smart device (e.g. [KNX](https://www.openhab.org/addons/bindings/knx/), [ZigBee](https://www.openhab.org/addons/bindings/zigbee/), [Z-Wave](https://www.openhab.org/addons/bindings/zwave/), [DALI](https://www.openhab.org/addons/bindings/dali/), [MQTT](https://www.openhab.org/addons/bindings/mqtt/), ...) - we use"[Shelly](https://www.openhab.org/addons/bindings/shelly/)" in our example.<li>Click `Install 4 add-ons` ➡️ `Get Started`.<li>You will be redirected back to openHAB's GUI, called **MainUI**.<li>Note: Add-ons which connect to your smart device (or services) are called **Bindings** in openHAB. | ![setup_wizzard_binding](https://github.com/egoist6/openhab-docs/assets/76903043/0dd40791-5996-4de2-b20f-f8767f9c706d) The setup wizard already added three pre-defined add-ons. During this Quick Guide they are not required but we recommend to install them for a later purpose.|
 |Pin MainUI's side bar (optional) | ![mainui_sidebar](https://github.com/egoist6/openhab-docs/assets/76903043/96c82687-809e-4924-8bac-3e24d090c0ac)|
 
@@ -96,6 +96,7 @@ todo: add gif here of slider widget, to see what we are going to do in this step
 |done. these are the fundamentals. now home **automation** begins: create rule and schedule| |
 
 todo
+add link to model where link to item is given
 add a result in the beginning what the reader will have learnt by the end of each step
 
 ## What next?
