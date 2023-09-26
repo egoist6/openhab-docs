@@ -75,7 +75,7 @@ Let's continue with adding an Item (postman) to a Thing Channel (mailbox):
 
 |Steps|Notes|
 |----------------------------------------------------------------|---------------------------------------------------------------|
-|Add Item to a Thing<li> Click `Things` ➡️ select the Thing we just created ➡️ switch to the tab `Channels`.<li> (As you can see there are quite a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<li> Click `Brightness` ➡️ `Add Link to Item...` ➡️ `Create a new Item` ➡️ `Link`<li> (During this Quick Guide it is not required to change Item attributes and profiles as you may have noticed in this step. You'll find [more information here for later on](/configuration/items.html).)| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
+|Add Item to a Thing<li> Click `Things` ➡️ select the Thing we just created ➡️ switch to the tab `Channels`.<li> (As you can see there are quite a few channels available but for now we just need the channel for changing the brightness of our smart dimmer.)<li> Click `Brightness` ➡️ `Add Link to Item...` ➡️ `Create a new Item` ➡️ `Link`<li> (During this Quick Guide it is not required to change Item attributes and profiles as you may have noticed in this step. You'll find more information for later on [here (Items)](/configuration/items.html) and [here (Model)](/tutorial/model.html).)| ![mainui_add_item_to_thing](https://github.com/egoist6/openhab-docs/assets/76903043/7df7a9a4-d6cd-4481-9600-3d79791e9a85)|
 |Overview of all Items in openHAB.<br/><br/>Congratulations, you have added your first Item to an openHAB Thing! | ![mainui_item](https://github.com/egoist6/openhab-docs/assets/76903043/21eac381-98d0-47eb-bb5e-d795cfef0bb5)|
 
 ## Step 4: Configure GUI / create automation
@@ -92,16 +92,17 @@ todo: add gif here of slider widget, to see what we are going to do in this step
 |Configure slider button<br/>Explanation of the configuration parameters:<li>`Header`, `Title`, `Subtitle`, `Footer`: these are labels<li>`Slider Item`: item which we send a command to when using a slider<li>`Action`: Action to perform when the button is pressed (here: Toggle Item)<li>`Action Item`: item which we send a command to when pressing the button| ![mainui_configure_slider](https://github.com/egoist6/openhab-docs/assets/76903043/4bad9112-5b9f-4d79-abcc-081a5d0aede2)|
 |Test slider button<li>Click `Run Now`, toggle on off, open popup |  |
 |no button color change to see if Light is on or off, advanced settings =(@'ShellyLivingRoomFloorLampDimmer_Brightness' == "0")?true:false, hit save button||
-|View the whole page<li>Open [http://localhost:8080/page/overview](http://localhost:8080/page/overview) in a new tab of your browser<li>(or `<IP-address>:8080/page/overview` on your mobile Phone)|  |
+|View the whole page<li>Open [http://localhost:8080/page/overview](http://localhost:8080/page/overview) in a new tab of your browser<li>(or `<IP-address>:8080/page/overview` on other devices such as your mobile phone)|  |
 |done. these are the fundamentals. now home **automation** begins: create rule and schedule| |
 
 todo
-add link to model where link to item is given
+congratulations below table
 add a result in the beginning what the reader will have learnt by the end of each step
 
 ## What next?
 
 ![Model](/tutorial/model.html)
 Widgets
-Examples of widgets and pages
+Marketplace widgets and rules
+Examples of pages
 ![image](https://github.com/egoist6/openhab-docs/assets/76903043/9f8c085b-faf7-4f3e-8101-f36da3912cc0)
